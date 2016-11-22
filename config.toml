@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://ricardorocha.io/"
+baseurl = "https://rochaporto.github.io/ricardorocha.io"
 themesDir = "themes"
 languageCode = "en-us"
 title = "Hugo Cactus Theme"
