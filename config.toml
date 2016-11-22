@@ -7,11 +7,11 @@ theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
-disqusShortname = "rochaporto"
+disqusShortname = ""
 
 [params]
 	name = "Ricardo Rocha"
-	description = ""
+	description = "This is my description"
 	bio = "Code - Mountains - Flying"
 	# Enter optionally your twitter account
 	twitter = "ahcorporto"
@@ -34,7 +34,7 @@ disqusShortname = "rochaporto"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = ""
+	aboutAuthor = "About the author"
 	tweet = ""
 	share = ""
 	# 404 page
