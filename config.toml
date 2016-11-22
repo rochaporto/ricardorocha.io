@@ -14,7 +14,7 @@ disqusShortname = ""
 	description = "This is my description"
 	bio = "Code - Mountains - Flying"
 	# Enter optionally your twitter account
-	twitter = "ahcorporto"
+	#twitter = "ahcorporto"
 	enableRSS = true
 
 	# Add custom assets with their paths relative to the static folder
@@ -36,7 +36,7 @@ disqusShortname = ""
 	# Sharing options and author information in posts
 	aboutAuthor = "About the author"
 	tweet = ""
-	share = ""
+	share = "nothing"
 	# 404 page
 	title404 = ""
 	subtitle404 = ""
