@@ -2,7 +2,7 @@
 baseurl = "https://rochaporto.github.io/"
 themesDir = "themes"
 languageCode = "en-us"
-title = "Hugo Cactus Theme"
+title = "Ricardo Rocha"
 theme = "hugo-cactus-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -11,8 +11,8 @@ disqusShortname = "rochaporto"
 
 [params]
 	name = "Ricardo Rocha"
-	description = "Describe your website"
-	bio = "Blogger - Programmer - Gopher"
+	description = ""
+	bio = "Code - Mountains - Flying"
 	# Enter optionally your twitter account
 	twitter = "ahcorporto"
 	enableRSS = true
@@ -34,7 +34,7 @@ disqusShortname = "rochaporto"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "Coding and planes."
+	aboutAuthor = ""
 	tweet = ""
 	share = ""
 	# 404 page
