@@ -12,7 +12,6 @@ categories = [
 ]
 date = "2016-11-22T22:16:22+01:00"
 draft = true
-menu = "main"
 weight = 10
 
 +++
