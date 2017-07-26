@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="post">
+    <header>
+        <h1>{{ .Title }}</h1>
+        <h2 class="headline">
+        {{ .Date.Format "January 2, 2006" }}
+        <br>
+        {{ with .Params.tags }}
+        {{ if ge (len .) 1 }}
+            {{ range . }}
+                <a href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
+            {{ end }}
+        {{ end }}
+        {{ end}}
+        </h2>
+    </header>
+    <section id="post-body">
+        {{ .Content }}
+    </section>
+</article>
+
+{{ partial "post/related-content.html" . }}
+{{ end }}

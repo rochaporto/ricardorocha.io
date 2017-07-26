@@ -1,53 +1,54 @@
-# Site settings
-baseurl = "https://rochaporto.github.io/"
-themesDir = "themes"
+baseurl = "https://ricardorocha.io/"
 languageCode = "en-us"
 title = "Ricardo Rocha"
 theme = "hugo-cactus-theme"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
-# Disable comments by leaving disqusShortname empty
-disqusShortname = ""
+
+[permalinks]
+  post = "/:year/:month/:day/:title/"
+  page = "/:title/"
 
 [params]
-	name = "Ricardo Rocha"
-	description = "Software Engineer at CERN"
-	bio = "Code - Mountains - Flying"
-	# Enter optionally your twitter account
-	twitter = "ahcorporto"
-	enableRSS = true
-
-	# Add custom assets with their paths relative to the static folder
-	customCSS = []
-	customJS  = []
-
-	# The variables below are optionally too and can be used to
-	# translate or customize each string of the theme.
-
-	# Navigation links
-	home = ""
-	about = ""
-	subscribe = ""
-	# Pagination links
-	olderPosts = ""
-	newerPosts = ""
-	readMore = ""
-	copyright = ""
-	# Sharing options and author information in posts
-	aboutAuthor = ""
-	tweet = ""
-	share = "nothing"
-	# 404 page
-	title404 = ""
-	subtitle404 = ""
-
-	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "mono-social"
-    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-    socialIconStyle = "rounded"
+  name = "Ricardo Rocha"
+  description = "Software Engineer at CERN"
+  bio = "Code - Mountains - Flying"
+  twitter = "ahcorporto"
+  enableRSS = true
+  customCSS = []
+  customJS  = []
+  home = ""
+  about = ""
+  subscribe = ""
+  olderPosts = ""
+  newerPosts = ""
+  readMore = ""
+  copyright = ""
+  aboutAuthor = ""
+  tweet = ""
+  share = "nothing"
+  title404 = ""
+  subtitle404 = ""
+  socialIconStyle = "rounded"
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://twitter.com/ahcorporto"
-    github   = "https://github.com/rochaporto"
-    linkedin = "https://www.linkedin.com/in/ricardo-rocha-739aa718"
+  twitter  = "https://twitter.com/ahcorporto"
+  github   = "https://github.com/rochaporto"
+  linkedin = "https://www.linkedin.com/in/ricardo-rocha-739aa718"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[[menu.main]]
+  name = "Blog"
+  weight = -200
+  url = "/post/"
+[[menu.main]]
+  name = "Projects"
+  weight = -190
+  url = "/project"
+[[menu.main]]
+  name = "Talks"
+  weight = -80
+  url = "/talk/"

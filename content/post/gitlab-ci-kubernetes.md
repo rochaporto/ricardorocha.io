@@ -1,4 +1,5 @@
 +++
+date = "2016-11-22T22:16:22+01:00"
 title = "GitLab and Kubernetes"
 description = "GitLab CI with Kubernetes for continuous deployment"
 tags = [
@@ -10,10 +11,8 @@ categories = [
   "development",
   "containers",
 ]
-date = "2016-11-22T22:16:22+01:00"
 draft = true
 weight = 10
-
 +++
 
 Benefit of using something like gitlab ci is...
