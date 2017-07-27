@@ -51,7 +51,7 @@ margin-bottom: 20px;
 html, body { height: 100%; }
 
 body {
-	font:16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:16px/1 "Lato", Helvetica, Arial, sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -101,7 +101,7 @@ h2 {
 	font-weight: 300;
 	color: #aaa;
 	margin-top: 10px;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	font-style: normal;
 }
 
@@ -221,7 +221,7 @@ em, i { font-style: italic; }
 }
 
 .post header {
-	text-align:center;
+	text-align: center;
 
 }
 
@@ -238,14 +238,11 @@ em, i { font-style: italic; }
 }
 
 .post h2.headline {
-	/*font: italic 22px/1.3em Georgia,serif;*/
 	font: normal 13px/1.5em "Lato",Helvetica,Arial,sans-serif;
 	margin: -5px 0 20px 0;
 	color: #b2b9be;
 	font-size: 13px;
-	text-transform: uppercase;
 	letter-spacing: 2px;
-	/*margin-top: 15px;*/
 	display: inline-block;
 }
 
@@ -392,14 +389,14 @@ Post List
 #post-list a {
 	color: #333;
 	display: block;
-	font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 19px/1.7 "Lato",helvetica,Arial,sans-serif;
 }
 
 #post-list .dates {
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 17px/1.8 "Lato",helvetica,Arial,sans-serif;
 	color: #bbb;
 }
 
@@ -541,7 +538,7 @@ h1.archive {
 
 h2.month {
 	width: 100%;
-	font: bold 13px/1 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 13px/1 "Lato",helvetica,Arial,sans-serif;
 	text-transform: uppercase;
 	margin-top: 40px;
 	margin-bottom: 10px;
@@ -555,7 +552,7 @@ h2.month {
 
 #archive-list a {
 	display: block;
-	font: bold 17px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 17px/1.7 "Lato",helvetica,Arial,sans-serif;
 	color: #333;
 }
 
@@ -563,7 +560,7 @@ h2.month {
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 17px/1.7 "Lato",helvetica,Arial,sans-serif;
 	color: #bbb;
 }
 
