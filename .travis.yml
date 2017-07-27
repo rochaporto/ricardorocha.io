@@ -1,0 +1,23 @@
+language: go
+
+addons:
+  apt:
+    packages:
+      - python-pygments
+
+before_script:
+    - go get -u -v github.com/spf13/hugo
+
+install:
+  - rm -rf public || exit 0
+
+script:
+  - hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
