@@ -228,20 +228,19 @@ em, i { font-style: italic; }
 .post h1 {
 	margin-bottom: 20px;
 	color: #222;
-	font: 300 32px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
+	font: 300 32px/1.4em "Lato", Helvetica,Arial,sans-serif;
 }
 
 .post h2 {
 	margin-bottom: 40px;
-	  font: 300 24px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
-	  color: #111;
+	font: 300 24px/1.5 "Lato",Helvetica,Arial,sans-serif;
+	color: #111;
 }
-
 
 .post h2.headline {
 	/*font: italic 22px/1.3em Georgia,serif;*/
-	font: normal 13px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
-	margin: -5px 0 40px 0;
+	font: normal 13px/1.5em "Lato",Helvetica,Arial,sans-serif;
+	margin: -5px 0 20px 0;
 	color: #b2b9be;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -251,9 +250,9 @@ em, i { font-style: italic; }
 }
 
 #post-list h2 {
-	font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 15px/1.2em "Lato",Helvetica,Arial,sans-serif;
 	color: #aaa;
-	max-width: 400px;
+	max-width: 800px;
 	margin-top: 2px;
 }
 
@@ -380,8 +379,8 @@ Post List
 
 #post-list li,#archive-list li {
 	border-top: 1px solid #eee;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	list-style-type: none;
 	margin-bottom: 0;
 }
@@ -437,7 +436,7 @@ Post List
 
 /* Post Page */
 .post {
-	margin: 80px 0 0 0;
+	margin: 20px 0 0 0;
 }
 
 #post-meta {
@@ -583,12 +582,12 @@ h2.month {
 }
 
 #post-list.archive.readmore h3{
-	font: 400 20px "Helvetica Neue", Helvetica,Arial,sans-serif;
-	margin-bottom: 30px;
+	font: 400 18px "Lato", Helvetica,Arial,sans-serif;
+	margin-top: 50px;
 }
 
 #post-list.archive.readmore a{
-	font: 400 16px/1.6 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 400 16px/1.2 "Lato",helvetica,Arial,sans-serif;
 	color: #5694f1;
 }
 
@@ -597,7 +596,7 @@ h2.month {
 }
 
 #post-list.archive.readmore .dates{
-	font: 300 16px/1.6 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 400 14px/1.6 "Lato",helvetica,Arial,sans-serif;
 }
 #sharing a.facebook {
 	background: #4361b3;
