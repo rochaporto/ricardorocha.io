@@ -50,5 +50,9 @@ theme = "hugo-cactus-theme"
   url = "/project"
 [[menu.main]]
   name = "Talks"
-  weight = -80
+  weight = -180
+  url = "/talk/"
+[[menu.main]]
+  name = "Gallery"
+  weight = -170
   url = "/talk/"
