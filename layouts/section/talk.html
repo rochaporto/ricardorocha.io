@@ -1,0 +1,18 @@
+{{ define "profile" }}
+	{{ partial "profile.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<ul id="post-list">
+	    {{ range .Paginator.Pages.GroupBy "Type" }}
+	    <h3>{{ .Key }}</h3>
+	    {{ range .Pages }}
+	        <li>
+            	    <a href='{{ .Params.external_url }}'><aside class="dates">{{ .Date.Format "Jan 2 2006" }}</aside></a>
+	            <a href='{{ .Params.external_url }}'>{{ .LinkTitle }}<h2>{{ .Description | markdownify }}</h2></a>
+	        </li>
+	    {{ end }}
+	    {{ end }}
+	</ul>
+	{{ partial "pagination.html" . }}
+{{ end }}
