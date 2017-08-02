@@ -1,0 +1,14 @@
+{{ define "profile" }}
+	{{ partial "profile.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<ul id="post-list">
+	    {{ range where .Paginator.Pages "Section" "ne" "" }}
+	        <li>
+	            <a href='{{ .Params.project_url }}'>{{ .LinkTitle }}<h2>{{ .Description | markdownify }}</h2></a>
+	        </li>
+	    {{ end }}
+	</ul>
+	{{ partial "pagination.html" . }}
+{{ end }}
