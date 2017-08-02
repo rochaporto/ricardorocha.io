@@ -3,8 +3,8 @@
 {{ end }}
 
 {{ define "main" }}
-	<ul id="post-list">
 	    {{ range .Paginator.Pages.GroupBy "Type" }}
+	<ul id="post-list">
 	    <h3>{{ .Key }}</h3>
 	    {{ range .Pages }}
 	        <li>
@@ -12,7 +12,9 @@
 	            <a href='{{ .Params.external_url }}'>{{ .LinkTitle }}<h2>{{ .Description | markdownify }}</h2></a>
 	        </li>
 	    {{ end }}
-	    {{ end }}
 	</ul>
+	<br/>
+	<br/>
+	    {{ end }}
 	{{ partial "pagination.html" . }}
 {{ end }}

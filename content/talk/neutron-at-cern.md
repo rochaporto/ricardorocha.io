@@ -1,6 +1,6 @@
 +++
 title = "Neutron at CERN - Moving thousands of nodes from Nova Network"
-description = "OpenStack Summit Barcelona"
+description = "OpenStack Summit 2016, 24-28 October, Barcelona"
 type = "External"
 tags = ["Talk"]
 draft = false

@@ -1,6 +1,6 @@
 +++
 title = "Towards 10,000 containers on OpenStack"
-description = "OpenStack Summit Barcelona"
+description = "OpenStack Summit 2016, 24-28 October, Barcelona"
 type = "External"
 tags = ["Talk"]
 draft = false
