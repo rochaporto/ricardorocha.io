@@ -2,7 +2,7 @@
 title = "Sunday Cricket in Zanskar"
 description = "Hiking, Budhism and Cricket in Ladakh"
 tags = ["Story","Hiking","Budhism","India","Ladakh"]
-draft = false
+draft = true
 date = "2017-08-04T23:37:01+02:00"
 image = "../images/story/zanskar-cricket.jpg"
 author = "Ricardo Rocha"
