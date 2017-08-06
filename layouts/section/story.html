@@ -12,8 +12,8 @@
 				<h2>{{ .Description }}</h2>
 				<br/>
 			</a>
-			{{ .Summary }}
-			<a href="{{ .URL }}">{{ .ReadingTime }} min read</a>
+			<p>{{ .Summary }}</p>
+			<a href="{{ .URL }}" style="font-weight: normal; font-size: 15px;">continue reading ... {{ .ReadingTime }} min</a>
 		</li>
 		<br clear="all"/>
 	    {{ end }}
