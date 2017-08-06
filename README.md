@@ -5,7 +5,7 @@ The website is created with HUGO.
 There are several types of content:
 
 * Home
-* Posts/Projects/Talks/Gallery - content/post|project|talk|gallery (see `archetypes`)
+* Posts/Projects/Talks/Stories - content/post|project|talk|story (see `archetypes`)
 
 Content with similar tags will show as `related content`.
 

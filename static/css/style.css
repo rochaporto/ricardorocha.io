@@ -350,8 +350,12 @@ thead th,th {
 }
 
 img {
-	max-width: 100%;
-	border-radius: 3px;
+	max-width: 60%;
+	display: block;
+	margin: 20px auto 20px auto;
+	border-radius: 4px;
+	border: solid 1px #cccccc;
+	padding: 2px;
 }
 
 /* Made with Cactus Badge */

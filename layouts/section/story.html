@@ -1,0 +1,22 @@
+{{ define "profile" }}
+	{{ partial "profile.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<ul id="post-list">
+	    {{ range where .Paginator.Pages "Section" "ne" "" }}
+	        <li style="text-align: center;">
+			<a href='{{ .URL }}'>
+				<h1>{{ .Title }}</h1>
+				<image style="width: 350px;" src="{{ .Params.image }}"/>
+				<h2>{{ .Description }}</h2>
+				<br/>
+			</a>
+			{{ .Summary }}
+			<a href="{{ .URL }}">{{ .ReadingTime }} min read</a>
+		</li>
+		<br clear="all"/>
+	    {{ end }}
+	</ul>
+	{{ partial "pagination.html" . }}
+{{ end }}
