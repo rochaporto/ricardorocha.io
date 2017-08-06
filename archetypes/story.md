@@ -1,8 +1,9 @@
 +++
 title = ""
 description = ""
-tags = ["Gallery"]
+tags = ["Story"]
 draft = false
 date = "{{ .Date }}"
-author = "joe"
+image = "../images/story/"
+author = "Ricardo Rocha"
 +++
