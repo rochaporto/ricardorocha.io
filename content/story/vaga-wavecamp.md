@@ -2,7 +2,7 @@
 title = "Vågå Wavecamp"
 description = "Flying high and cold, barbecue and sausages on a frozen lake"
 tags = ["Story","Gliding","Flying"]
-draft = false
+draft = true
 date = "2017-08-06T13:52:46+02:00"
 image = "../images/story/vaga-wavecamp.jpg"
 author = "Ricardo Rocha"
