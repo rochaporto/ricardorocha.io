@@ -9,9 +9,9 @@ menu = "main"
 
 I'm a software engineer at CERN in Geneva, where i help store and analyse large amounts of data.
 
-I enjoy learning and building new things, using new programming languages and tools. My past work included data storage systems, monitoring tools and cloud deployments. Current main interests include distributed systems, automation of large scale deployments, containerization and more recently machine learning.
+I enjoy learning and building new things, using new programming languages and tools. My past work included data storage systems, monitoring tools and cloud deployments. Currently my main interests include distributed systems, automation of large scale deployments, containerization and more recently machine learning.
 
-Open source projects i use and contribute to include OpenStack, Kubernetes and Docker. I also maintain a few small projects, you can find more information on this page.
+Open source projects i use and contribute to include OpenStack, Kubernetes and Docker. I also maintain a few small projects, you can find more information on this website.
 
 I enjoy flying gliders and small planes, mountain climbing, hiking and seeing the world.
 
