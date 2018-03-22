@@ -4,9 +4,16 @@
     {{ $kind := where .Site.RegularPages "Section" "!=" "" }}
     {{ $othr := where $kind "URL" "!=" .URL }}
     {{ range first 6 $othr }}
-        <li>
-		<a href="{{ .URL }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "2006/01/02" }}, {{ .ReadingTime }} min reading time</aside></a><br/>
-		{{ .Description }}
-        </li>
+        {{ if .Params.external_url }}
+            <li>
+		        <a href="{{ .Params.external_url }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "2006/01/02" }}</aside></a><br/>
+		        {{ .Description }}
+            </li>
+        {{ else }}
+            <li>
+		        <a href="{{ .URL }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "2006/01/02" }}, {{ .ReadingTime }} min reading time</aside></a><br/>
+		        {{ .Description }}
+            </li>
+        {{ end }}
     {{ end }}
 </ul>
