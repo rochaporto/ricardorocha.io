@@ -5,5 +5,5 @@ tags = ["Project"]
 draft = false
 date = "2017-06-10T22:24:24+02:00"
 author = "Ricardo Rocha"
-project_url = "https://github.com/rochaporto/ezgliding"
+external_url = "https://github.com/rochaporto/ezgliding"
 +++
