@@ -22,7 +22,7 @@ pygmentsUseClasses = true
   olderPosts = ""
   newerPosts = ""
   readMore = "Latest Content"
-  copyright = "@ Copyright 2017 Ricardo Rocha, Built with <a href='http://gohugo.io'>Hugo</a>"
+  copyright = "@ Copyright 2018 Ricardo Rocha, Built with <a href='http://gohugo.io'>Hugo</a>"
   aboutAuthor = ""
   tweet = ""
   share = "nothing"
