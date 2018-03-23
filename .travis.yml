@@ -7,7 +7,13 @@ install:
   - rm -rf public || exit 0
 
 script:
-  - hugo
+  - hugo version
+  - hugo config
+  - hugo env
+  - hugo list drafts
+  - hugo list expired
+  - hugo list future
+  - hugo -v
 
 deploy:
   provider: pages
