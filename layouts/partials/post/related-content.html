@@ -5,11 +5,21 @@
 {{ if $.Scratch.Get "has_related" }}
   <aside>
     <header><strong>Related Content</strong></header>
-    <hr>
-    <ul>
+    <br/>
+    <ul id="post-list" class="archive readmore">
       {{ $num_to_show := .Site.Params.related_content_limit | default 7 }}
       {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> &ndash; {{ .ReadingTime }} min read
+        {{ if .Params.external_url }}
+            <li>
+		        <a href="{{ .Params.external_url }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "January 02, 2006" }}</aside></a><br/>
+		        {{ .Description }}
+            </li>
+        {{ else }}
+            <li>
+		        <a href="{{ .URL }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "January 02, 2006" }}, {{ .ReadingTime }} min reading time</aside></a><br/>
+		        {{ .Description }}
+            </li>
+        {{ end }}
       {{ end }}
     </ul>
   </aside>

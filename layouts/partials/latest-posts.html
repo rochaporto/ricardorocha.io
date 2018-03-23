@@ -6,12 +6,12 @@
     {{ range first 6 $othr }}
         {{ if .Params.external_url }}
             <li>
-		        <a href="{{ .Params.external_url }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "2006/01/02" }}</aside></a><br/>
+		        <a href="{{ .Params.external_url }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "January 02, 2006" }}</aside></a><br/>
 		        {{ .Description }}
             </li>
         {{ else }}
             <li>
-		        <a href="{{ .URL }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "2006/01/02" }}, {{ .ReadingTime }} min reading time</aside></a><br/>
+		        <a href="{{ .URL }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "January 02, 2006" }}, {{ .ReadingTime }} min reading time</aside></a><br/>
 		        {{ .Description }}
             </li>
         {{ end }}
