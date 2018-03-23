@@ -13,7 +13,7 @@ script:
   - hugo list drafts
   - hugo list expired
   - hugo list future
-  - hugo -v
+  - hugo -v -F
 
 deploy:
   provider: pages
