@@ -1,5 +1,5 @@
 +++
-title = "CERN Experiences with Multi Cloud Federated Kubernetes"
+title = "Keynote: CERN Experiences with Multi Cloud Federated Kubernetes"
 description = "KubeCon + CloudNativeCon Europe 2018, 02-04 May, Copenhagen"
 type = "External"
 tags = ["Talk"]
