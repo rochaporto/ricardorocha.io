@@ -1,4 +1,6 @@
-# ricardorocha.io [![Build Status](https://travis-ci.org/rochaporto/ricardorocha.io.svg?branch=master)](https://travis-ci.org/rochaporto/ricardorocha.io)
+# ricardorocha.io
+
+[![Build Status](https://github.com/rochaporto/ricardorocha.io/workflows/gh-pages/badge.svg?event=push&branch=master)](https://github.com/rochaporto/ricardorocha.io/actions?workflow=gh-pages)
 
 The website is created with HUGO.
 
