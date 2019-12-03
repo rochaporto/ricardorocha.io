@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talk on Ricardo Rocha</title>
+    <link>http://ricardorocha.io/tags/talk/</link>
+    <description>Recent content in Talk on Ricardo Rocha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 May 2019 17:18:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://ricardorocha.io/tags/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keynote: Reperforming a Nobel Prize Discovery on Kubernetes</title>
+      <link>http://ricardorocha.io/talk/reperforming-higgs-kubernetes/</link>
+      <pubDate>Tue, 21 May 2019 17:18:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/reperforming-higgs-kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes at WLCG sites</title>
+      <link>http://ricardorocha.io/talk/kubernetes-atlas-jamboree/</link>
+      <pubDate>Thu, 07 Mar 2019 11:50:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/kubernetes-atlas-jamboree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CERN Container Use Cases</title>
+      <link>http://ricardorocha.io/talk/containerstack/</link>
+      <pubDate>Thu, 31 Jan 2019 09:00:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/containerstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Storage Provisioning of Manila/CephFS Shares on Kubernetes</title>
+      <link>http://ricardorocha.io/talk/dynamic-storage-provisioning-of-manilacephfs/</link>
+      <pubDate>Wed, 14 Nov 2018 11:50:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/dynamic-storage-provisioning-of-manilacephfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenStack Networking at CERN: Nova Network, Neutron and SDN</title>
+      <link>http://ricardorocha.io/talk/evolution-networking-at-cern/</link>
+      <pubDate>Tue, 22 May 2018 13:05:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/evolution-networking-at-cern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keynote: CERN Experiences with Multi Cloud Federated Kubernetes</title>
+      <link>http://ricardorocha.io/talk/cern-experiences-multi-cloud-kubernetes/</link>
+      <pubDate>Wed, 02 May 2018 13:05:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/cern-experiences-multi-cloud-kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containers Hands-On</title>
+      <link>http://ricardorocha.io/talk/containers-handson/</link>
+      <pubDate>Thu, 22 Mar 2018 13:05:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/containers-handson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conteneurs au CERN</title>
+      <link>http://ricardorocha.io/talk/conteneurs-au-cern/</link>
+      <pubDate>Thu, 15 Mar 2018 13:05:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/conteneurs-au-cern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrating CERN Software Distribution with Docker</title>
+      <link>http://ricardorocha.io/talk/integrating-cern-software-with-docker/</link>
+      <pubDate>Thu, 19 Oct 2017 13:05:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/integrating-cern-software-with-docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CERN: Containers on the Cloud</title>
+      <link>http://ricardorocha.io/talk/containers-on-the-cern-cloud/</link>
+      <pubDate>Wed, 10 May 2017 13:05:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/containers-on-the-cern-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How and where python is used at CERN</title>
+      <link>http://ricardorocha.io/talk/python-at-cern/</link>
+      <pubDate>Sat, 18 Mar 2017 09:14:44 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/python-at-cern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards 10,000 containers on OpenStack</title>
+      <link>http://ricardorocha.io/talk/towards-10000-containers/</link>
+      <pubDate>Wed, 26 Oct 2016 12:15:48 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/towards-10000-containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neutron at CERN - Moving thousands of nodes from Nova Network</title>
+      <link>http://ricardorocha.io/talk/neutron-at-cern/</link>
+      <pubDate>Tue, 25 Oct 2016 13:05:00 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/neutron-at-cern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrating Containers in the CERN Private Cloud</title>
+      <link>http://ricardorocha.io/talk/integrate-containers-in-cern-cloud/</link>
+      <pubDate>Wed, 12 Oct 2016 12:30:40 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/integrate-containers-in-cern-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CERN and Science Clouds in Europe with TOSCA and the Heat Translator</title>
+      <link>http://ricardorocha.io/talk/cern-tosca-heat-translator/</link>
+      <pubDate>Mon, 25 Apr 2016 15:40:19 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/cern-tosca-heat-translator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containers and Orchestration in the CERN Cloud</title>
+      <link>http://ricardorocha.io/talk/containers-orchestration-in-cern-cloud/</link>
+      <pubDate>Fri, 08 Apr 2016 10:00:31 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/talk/containers-orchestration-in-cern-cloud/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

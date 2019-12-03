@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on Ricardo Rocha</title>
+    <link>http://ricardorocha.io/tags/project/</link>
+    <description>Recent content in Project on Ricardo Rocha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Aug 2017 22:24:13 +0200</lastBuildDate>
+    
+	<atom:link href="http://ricardorocha.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>goigc</title>
+      <link>http://ricardorocha.io/project/goigc/</link>
+      <pubDate>Wed, 02 Aug 2017 22:24:13 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/project/goigc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ezgliding</title>
+      <link>http://ricardorocha.io/project/ezgliding/</link>
+      <pubDate>Sat, 10 Jun 2017 22:24:24 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/project/ezgliding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>collectd-ceph</title>
+      <link>http://ricardorocha.io/project/collect-ceph/</link>
+      <pubDate>Sun, 05 Oct 2014 21:43:39 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/project/collect-ceph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashing-ceph</title>
+      <link>http://ricardorocha.io/project/dashing-ceph/</link>
+      <pubDate>Sun, 05 Oct 2014 21:40:38 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/project/dashing-ceph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>collectd-openstack</title>
+      <link>http://ricardorocha.io/project/collect-openstack/</link>
+      <pubDate>Fri, 25 Jul 2014 21:43:43 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/project/collect-openstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashing-openstack</title>
+      <link>http://ricardorocha.io/project/dashing-openstack/</link>
+      <pubDate>Wed, 09 Jul 2014 21:45:43 +0200</pubDate>
+      
+      <guid>http://ricardorocha.io/project/dashing-openstack/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
