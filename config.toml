@@ -43,7 +43,7 @@ theme = "hugo-cactus-theme"
 [[menu.main]]
   name = "Blog"
   weight = -200
-  url = "/post/"
+  url = "/blog/"
 [[menu.main]]
   name = "Projects"
   weight = -190
