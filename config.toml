@@ -2,7 +2,6 @@ baseurl = "http://ricardorocha.io/"
 languageCode = "en-us"
 title = "Ricardo Rocha"
 theme = "hugo-cactus-theme"
-pygmentsUseClasses = true
 
 [permalinks]
   post = "/:year/:month/:day/:title/"
