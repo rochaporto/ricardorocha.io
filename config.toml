@@ -1,4 +1,4 @@
-baseurl = "http://ricardorocha.io/"
+baseurl = "https://ricardorocha.io/"
 languageCode = "en-us"
 title = "Ricardo Rocha"
 theme = "hugo-cactus-theme"
