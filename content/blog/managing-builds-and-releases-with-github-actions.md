@@ -2,7 +2,6 @@
 author = "Ricardo Rocha"
 date = "2019-12-02T18:00:00+00:00"
 description = ""
-draft = true
 tags = ["dev", "git", "github", "github actions"]
 title = "Managing Builds and Releases with GitHub Actions"
 +++
