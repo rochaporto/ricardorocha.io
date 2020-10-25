@@ -1,6 +1,6 @@
 +++
 author = "Ricardo Rocha"
-date = "2020-10-25T23:00:00+00:00"
+date = "2020-10-25T22:00:00+00:00"
 description = "Upgrade containerd on a GKE cluster"
 tags = ["kubernetes", "gke", "containerd"]
 title = "Custom Containerd Versions in GKE Clusters"
