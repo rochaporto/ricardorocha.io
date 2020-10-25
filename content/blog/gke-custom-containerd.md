@@ -68,9 +68,10 @@ sudo systemctl start kubelet
 And that's it, go ahead and run this on all your nodes.
 ```bash
 export ZONE=europe-west4-a
+export PROJECT=YOURPROJECT
 for n in $(kubectl get node -o custom-columns='DATA:metadata.name' | grep gke); do
-	scp -o StrictHostKeyChecking=no setup-ctr-14.sh ${n}.${ZONE}.nimble-valve-236407:~/
-	ssh -o StrictHostKeyChecking=no ${n}.${ZONE}.nimble-valve-236407 ~/setup-ctr-14.sh
+	scp -o StrictHostKeyChecking=no setup-ctr-14.sh ${n}.${ZONE}.${PROJECT}:~/
+	ssh -o StrictHostKeyChecking=no ${n}.${ZONE}.${PROJECT} ~/setup-ctr-14.sh
 done
 ```
 
