@@ -56,3 +56,6 @@ theme = "hugo-cactus-theme"
   name = "Stories"
   weight = -170
   url = "/story/"
+
+[markup.goldmark.renderer]
+unsafe = true
