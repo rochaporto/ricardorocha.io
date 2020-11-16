@@ -2,7 +2,7 @@
 author = "Ricardo Rocha"
 date = "2020-11-13T22:00:00+00:00"
 description = "An example for GPU workload metrics"
-tags = ["prometheus", "pandas", "jupyter"]
+tags = ["kubernetes", "prometheus", "pandas", "jupyter"]
 title = "Analysing Prometheus Metrics in Pandas"
 +++
 
