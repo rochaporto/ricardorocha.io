@@ -1,0 +1,61 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Ricardo Rocha"><meta name=description content="Software Engineer at CERN"><meta name=generator content="Hugo 0.60.0"><title>A VPN-less Teleworking Setup</title><link rel="shortcut icon" href=https://ricardorocha.io/images/favicon.ico><link rel=stylesheet href=https://ricardorocha.io/css/style.css><link rel=stylesheet href=https://ricardorocha.io/css/highlight.css><link rel=stylesheet href=https://ricardorocha.io/css/monosocialiconsfont.css><link href=https://ricardorocha.io/index.xml rel=alternate type=application/rss+xml title="Ricardo Rocha"><meta property="og:title" content="A VPN-less Teleworking Setup"><meta property="og:description" content="Making work from home simpler when VPNs are not an option"><meta property="og:type" content="article"><meta property="og:url" content="https://ricardorocha.io/blog/teleworking-setup-novpn/"><meta property="article:published_time" content="2020-11-16T16:00:00+00:00"><meta property="article:modified_time" content="2020-11-16T16:00:00+00:00"><meta itemprop=name content="A VPN-less Teleworking Setup"><meta itemprop=description content="Making work from home simpler when VPNs are not an option"><meta itemprop=datePublished content="2020-11-16T16:00:00&#43;00:00"><meta itemprop=dateModified content="2020-11-16T16:00:00&#43;00:00"><meta itemprop=wordCount content="411"><meta itemprop=keywords content="linux,teleworking,"><meta name=twitter:card content="summary"><meta name=twitter:title content="A VPN-less Teleworking Setup"><meta name=twitter:description content="Making work from home simpler when VPNs are not an option"><meta name=twitter:site content="@https://twitter.com/ahcorporto"></head><body><nav class=main-nav><a href=https://ricardorocha.io/><span class=arrow>←</span>Home</a>
+<a href=/blog/>Blog</a>
+<a href=/project>Projects</a>
+<a href=/talk/>Talks</a>
+<a href=/story/>Stories</a>
+<a href=/about/>About</a>
+<a href=https://ricardorocha.io/index.xml>RSS</a></nav><section id=wrapper><article class=post><header><h1>A VPN-less Teleworking Setup</h1><h2 class=headline>November 16, 2020 - 2 min read<br><a href=https://ricardorocha.io/tags/linux>linux</a>
+<a href=https://ricardorocha.io/tags/teleworking>teleworking</a></h2></header><section id=post-body><p>Working from home became frequent enough since March this year to justify an improved
+home work setup (both hardware and software).</p><p>Setting up a VPN would be an easy and obvious choice but this is currently not an
+option at work. Alternatively and after suggestions from multiple
+people a combination of ssh / proxy setup and a handy browser
+extension and the result is close enough.</p><p>Ignore all the GSSAPI* below if you don't require Kerberos or similar access.</p><h2 id=ssh>SSH</h2><p>Like most people most of my work requires access to the internal network.
+Without a VPN a configuration like the one below is a good option.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cfg data-lang=cfg><span style=color:#a6e22e>CanonicalDomains cern.ch</span>
+<span style=color:#a6e22e>CanonicalizeHostname yes</span>
+
+<span style=color:#a6e22e>Host *.cern.ch !IGNORE*.cern.ch !IGNOREOTHER*.cern.ch</span>
+    <span style=color:#a6e22e>User MYUSER</span>
+    <span style=color:#a6e22e>GSSAPIDelegateCredentials yes</span>
+    <span style=color:#a6e22e>ProxyJump PROXYHOST.cern.ch</span>
+</code></pre></div><p>The important bit here is
+<a href=https://man.openbsd.org/ssh_config.5#ProxyJump>ProxyJump</a> where we pass the host that serves as
+a sort of <em>bastion host</em> - we'll need a similar machine available and open externally.</p><p>As all connections get forwarded via this host, this next bit of config is very
+useful.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cfg data-lang=cfg><span style=color:#a6e22e>Host PROXYHOST PROXYHOST.cern.ch</span>
+    <span style=color:#a6e22e>HostName PROXYHOST.cern.ch</span>
+    <span style=color:#a6e22e>User MYUSER</span>
+    <span style=color:#a6e22e>ControlPath ~/.ssh/controlmasters/%r@%h:%p</span>
+    <span style=color:#a6e22e>ControlMaster auto</span>
+    <span style=color:#a6e22e>ControlPersist 10m</span>
+    <span style=color:#a6e22e>GSSAPIAuthentication yes</span>
+    <span style=color:#a6e22e>GSSAPIDelegateCredentials yes</span>
+    <span style=color:#a6e22e>GSSAPITrustDNS yes</span>
+    <span style=color:#a6e22e>DynamicForward 8011</span>
+    <span style=color:#a6e22e>ExitOnForwardFailure no</span>
+</code></pre></div><p>The relevant bit is in the
+<a href=http://man.openbsd.org/ssh_config.5#ControlMaster>ControlMaster</a>
+which will multiplex outgoing connections over a single connection - in this
+case our bastion host. Start a session to this host and keep it going and new
+sessions will speed up significantly, and will drop the need to do 2FA on every
+session (if 2FA is enabled in your bastion host).</p><p>We can check the control session status.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ssh -O check PROXYHOST
+Master running <span style=color:#f92672>(</span>pid<span style=color:#f92672>=</span>3007<span style=color:#f92672>)</span>
+</code></pre></div><p>and manually stop it - every now and then it might hang and need to be manually
+stopped, sometimes we might need to cleanup some defunct ssh processes as
+well.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ssh -O stop PROXYHOST
+</code></pre></div><h2 id=socks-proxy>SOCKS Proxy</h2><p>The second relevant directive above is
+<a href=http://man.openbsd.org/ssh_config.5#DynamicForward>DynamicForward</a>
+which is setting up 8011 as a local port for a SOCKS Proxy. We can rely on it
+for the command line or browser - <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=en">SwitchyOmega</a>
+is a handy chrome extension.</p><figure><img src=/images/blog/switchyprofile.png width=100%></figure><h2 id=kubernetes>Kubernetes</h2><p>Last but not least a lot of my day is spent accessing internal Kubernetes
+clusters. Since Kubernetes 1.19 the kubectl client supports a <em>proxy-url</em>
+option taking a SOCKS proxy.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cfg data-lang=cfg><span style=color:#a6e22e>$ cat config</span>
+<span style=color:#a6e22e>- cluster:</span>
+    <span style=color:#a6e22e>certificate-authority-data: ...</span>
+    <span style=color:#a6e22e>server: https://IPOFCLUSTER:6443</span>
+    <span style=color:#a6e22e>proxy-url: socks5://localhost:8011</span>
+
+<span style=color:#a6e22e>$ kubectl get pod</span>
+</code></pre></div><p>Alternatively we could:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>export https_proxy<span style=color:#f92672>=</span>socks5://localhost:8011
+</code></pre></div><p>which will do the job but is not ideal if we have a mix of internal and
+external (public cloud) clusters we need to deal with.</p></section></article><footer id=footer><div id=social><a class=symbol href=https://github.com/rochaporto>roundedgithub</a>
+<a class=symbol href=https://www.linkedin.com/in/ricardo-rocha-739aa718>roundedlinkedin</a>
+<a class=symbol href=https://twitter.com/ahcorporto>roundedtwitterbird</a></div><p class=small>@ Copyright 2020 Ricardo Rocha, Built with <a href=http://gohugo.io>Hugo</a></p></footer></section><script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js></script><script src=https://ricardorocha.io/js/main.js></script><script src=https://ricardorocha.io/js/highlight.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>
