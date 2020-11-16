@@ -2,7 +2,7 @@
 author = "Ricardo Rocha"
 date = "2020-11-16T16:00:00+00:00"
 description = "Making work from home simpler when VPNs are not an option"
-tags = ["linux", "teleworking"]
+tags = ["linux", "teleworking", "kubernetes"]
 title = "A VPN-less Teleworking Setup"
 +++
 
