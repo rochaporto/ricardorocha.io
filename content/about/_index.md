@@ -15,7 +15,7 @@ I enjoy learning and building new things, using new programming languages and to
 
 Open source projects i use and contribute to include OpenStack, Kubernetes and Docker. I also maintain a few small projects, you can find more information on this website.
 
-I enjoy flying gliders and small planes, mountain climbing, hiking and seeing the world.
+I enjoy flying gliders and small planes, mountaineering, hiking and seeing the world.
 
 I will try to write about all of the above.
 
@@ -29,13 +29,13 @@ I will try to write about all of the above.
 ---
 
 {{< figure src="/images/story/lukla-mi8.jpg"
-    caption="Taking a ride in a Mil MI-8 helicopter flying back to Kathmandu from Lukla. Escaping an early monsoon arrival after a month of trekking and climbing in the Khumbu valley." width="100%" >}}
+    caption="Taking a ride in a Mil MI-8 helicopter flying back to Kathmandu from Lukla. Escaping an early monsoon arrival after a month of trekking and climbing in the Khumbu valley of Nepal." width="100%" >}}
 
 {{< figure src="/images/story/lukla-mi8-cockpit.jpg" width="100%" >}}
 
 ---
 
 {{< figure src="/images/story/zanskar-cricket.jpg"
-    caption="An improvised Sunday afternoon cricket match in what must be the most scenic cricket pitch in the world. During a stop in Kargiakh on a long trek from Lamayuru to Darsha in Ladakh, India." width="100%" >}}
+    caption="An improvised Sunday afternoon cricket match in what must be the most scenic cricket pitch in the world. A rest day in Kargiakh on a long trek from Lamayuru to Darsha through the Zanskar valley in Ladakh, India." width="100%" >}}
 
 {{< figure src="/images/story/zanskar-trek.jpg" width="100%" >}}
