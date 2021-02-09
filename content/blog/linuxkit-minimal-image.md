@@ -1,6 +1,6 @@
 +++
 author = "Ricardo Rocha"
-date = "2021-01-22T00:00:00+00:00"
+date = "2021-02-06T00:00:00+00:00"
 description = "A simple and declarative way to maintain minimal and reproducible cluster node images"
 tags = ["kubernetes", "docker", "containerd", "linuxkit"]
 title = "Building Immutable Cluster Images with LinuxKit"
