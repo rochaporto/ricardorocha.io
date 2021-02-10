@@ -101,6 +101,7 @@ $ ls -s linuxkit.qcow2
 ```
 
 The final image is just over 120MB (vs 1.7GB of a Fedora Core image!).
+
 In this case we include the additional *metadata*
 component to handle the node configuration in an OpenStack environment and
 *rngd* and *sshd* as long lived services, so the image could be even smaller -
@@ -127,8 +128,8 @@ for the base components, and rely on Kubernetes (or other orchestrator) to
 handle the actual workloads. Kubernetes already does the job of ensuring the
 desired workload constraints are followed - [Affinities](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity),
 [TopologyContraints](https://kubernetes.io/docs/concepts/workloads/pods/pod-topology-spread-constraints/), [PodDisruptionBudgets](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/#pod-disruption-budgets), etc. -
-and is designed so nodes are disposable and can be easily recreated without an
-impact on the workloads (in most cases).
+and is designed so nodes are disposable by default and can be recreated without an
+impact on the workloads (minus stateful workloads).
 
 We end up with something like this...
 
@@ -140,9 +141,11 @@ we get finer granularity on the deployment where needed by running the
 workloads in containers. A kernel upgrade means a rollout of a new base image
 across the cluster (recreating the nodes), but a new release of a single
 service only requires recreating the corresponding service containers.
-
-This type of setup poses a few challenges at the start, especially when
-frequent debugging of the nodes is required. It is wise to keep close by a handy
-container with all required tools (netstat, tcpdump, and other close friends)
-when checks inside the containers are not enough, or recreating the node is not
-an option or did not fix the issue.
+ 
+In addition to the benefits described above, relying on immutable
+infrastructure also poses a few challenges - the first debug session can be
+quite frustating when *apt-get install* and similar is not possible. But the
+notion of *everything is a container* picks up quickly, and keeping close by an image
+with all required tools (netstat, tcpdump, and other good friends) offers an
+even better way to easily and quickly debug issues on individual nodes - and
+again, only when really needed.
