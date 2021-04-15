@@ -11,6 +11,9 @@ I'm a Computing Engineer working at [CERN](https://home.cern) - the European Org
 
 {{< figure src="/images/story/cern-lhc.jpg" width="100%" >}}
 
+I am a member of the [CNCF Technical Oversight Committee (TOC)](https://github.com/cncf/toc)
+and help lead the [CNCF Research User Group](https://github.com/cncf/research-user-group).
+
 I enjoy learning and building new things, using new programming languages and tools and helping them grow and scale to the needs of large scientific and research projects. My past work included development and deployment of data storage systems and monitoring tools.
 
 Open source projects i use and contribute to include OpenStack, Kubernetes and Docker. I also maintain a few small projects, you can find more information on this website.
