@@ -1,6 +1,6 @@
 +++
-title = "Kubernetes et CEPH CSI au CERN"
-description = "CEPH Meetup Montreal (french)"
+title = "Kubernetes et CEPH CSI au CERN (french)"
+description = "CEPH Meetup Montreal"
 type = "External"
 tags = ["Talk"]
 draft = false
