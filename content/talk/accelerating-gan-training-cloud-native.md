@@ -1,6 +1,6 @@
 +++
 title = "Accelerating GAN Training Using Cloud Native Technologies and the Public Cloud"
-description = "ISC High Performance"
+description = "ISC High Performance 2021"
 type = "External"
 tags = ["Talk"]
 draft = false
