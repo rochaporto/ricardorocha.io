@@ -3,7 +3,7 @@
 
     {{ $kind := where .Site.RegularPages "Section" "!=" "" }}
     {{ $othr := where $kind "URL" "!=" .URL }}
-    {{ range first 6 $othr }}
+    {{ range first 9 $othr }}
         {{ if .Params.external_url }}
             <li>
 		        <a href="{{ .Params.external_url }}">{{ humanize .Section }}: {{ .LinkTitle }}<aside class="dates">{{ .Date.Format "January 02, 2006" }}</aside></a><br/>
