@@ -6,5 +6,5 @@ tags = ["Talk"]
 draft = false
 date = "2022-04-13T17:00:00+02:00"
 author = "Ricardo Rocha"
-external_url = ""
+external_url = "None"
 +++
