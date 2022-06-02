@@ -1,6 +1,5 @@
 +++
-title = "Enhancing Analysis Performance and Reproducibility with Containers and
-the Cloud"
+title = "Enhancing Analysis Performance and Reproducibility with Containers and the Cloud"
 description = "ExaHealth 2021"
 type = "External"
 tags = ["Talk"]
