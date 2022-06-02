@@ -1,5 +1,5 @@
 +++
-title = "Keynote: Build Bridges: Cloud Native and High Performance Computing"
+title = "Keynote: Building Bridges: Cloud Native and High Performance Computing"
 description = "KubeCon + CloudNativeCon Europe 2022, 18-20 May, Valencia"
 type = "External"
 tags = ["Talk"]
