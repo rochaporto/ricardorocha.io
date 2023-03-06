@@ -1,6 +1,6 @@
 +++
 title = "Panel: Connecting and Securing Services for Hybrid and Multi Cloud Kubernetes"
-description = "KubeCon + CloudNativeCon Europe 2022, 18-20 May, Valencia"
+description = "KubeCon + CloudNativeCon Europe 2023, 17-21 April, Amsterdam"
 type = "External"
 tags = ["Talk"]
 draft = false
