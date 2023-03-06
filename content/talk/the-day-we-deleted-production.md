@@ -1,6 +1,6 @@
 +++
 title = "The Day We Delete(d) Production"
-description = "KubeCon + CloudNativeCon Europe 2023, 17-21 April, Amsterdam"
+description = "KubeCon + CloudNativeCon Europe 2023, 19-21 April, Amsterdam"
 type = "External"
 tags = ["Talk"]
 draft = false
